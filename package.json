@@ -1,0 +1,16 @@
+{
+  "name": "task-helper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "npm --prefix server run dev",
+    "build:check": "vite build"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3"
+  }
+}
