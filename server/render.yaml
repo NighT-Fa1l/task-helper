@@ -6,22 +6,34 @@ services:
     buildCommand: npm install
     startCommand: npm start
     healthCheckPath: /api/health
+
     envVars:
       - key: NODE_ENV
         value: production
+
       - key: COOKIE_SECURE
         value: "true"
+
       - key: DATABASE_URL
         sync: false
+
       - key: FRONTEND_URL
         sync: false
+
       - key: JWT_SECRET
         sync: false
+
       - key: GOOGLE_CLIENT_ID
         sync: false
+
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+
       - key: AI_API_KEY
         sync: false
+
       - key: AI_BASE_URL
-        value: https://api.openai.com/v1
+        value: https://openrouter.ai/api/v1
+
       - key: AI_MODEL
-        value: gpt-4o-mini
+        value: openrouter/free
